@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#0054a3 ;
+    --secondary-text-color:#1b2d3e;
+    --accent-color:#11a6c8;
+    --accent-color-dark:#1d69a3;
+    --accent-inline-section: 20px;
+
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--primary-text-color)
+}
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+    text-decoration-thickness:var(--secondary-text-color);
+}
+.flex{
+    display:flex;
+    align-items: centre;
+}
+.container {
+    max-width: 1180px;
+    margin-inline:auto;
+    overflow: hidden;
+}
+nav{
+    background-color: rgb(221, 241, 247);
+    box-shadow: 0 0 5px #9fb8cb;
+    position:fixed;
+    top:0px;
+    right:0px;
+    left: 0px;
+    height: 70px;
+}
+.main-nav{
+    justify-content:space-between;
+    padding-block:8px;
+}
+.logo{
+    padding-inline-start: 5px;
+    width:90px;
+}
+.nav-links ul{
+    gap:25px;
+    padding-top: 20px;
+}
+.hover-link{
+    cursor: pointer;
+}
+.hover-link:hover{
+    color: var(--accent-color-dark);
+}
+.hover-link:active{
+    color: red;
+}
+.nav-item.active{
+    color: var(--accent-color);
+}
+
+.search-bar{
+    height:"32px";
+    gap:8px;
+    padding-top: 13px;
+}
+.news-input{
+    align-items: center;
+    width: 200px;
+    height: 60%;
+    padding-inline: 12px;
+    border-radius: 4px;
+    border:2px solid #bbd0e2;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.search-button{
+    background-color: var(--accent-color);
+    color:azure;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 60%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.search-button:hover{
+    background-color: var(--accent-color-dark);
+}
+main{
+    padding-block: 20px;
+    margin-top: 80px;
+}
+.cards-container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    align-items: start;
+    overflow: hidden;
+}
+.card{
+    width: 360px;
+    min-height: 400px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: 1px 1px 8px #b4d5f0;
+    background: rgb(240, 252, 255);
+    transform: translateY(-2px) ;
+}
+.card-header img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 12px;
+}
+.news-source{
+    margin-block: 12px;
+}
