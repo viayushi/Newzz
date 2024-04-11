@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NewZZ</title>
+  <link rel="stylesheet" href="newsApp.css">
+</head>
+<body>
+  <nav>
+    <div class="main-nav container flex">
+      <a href="#" onclick="reload()">
+        <img class="logo" src="newslogo.png" alt ="logo">
+      </a>
+
+      <div class="nav-links">
+        <ul class="flex">
+          <li class="hover-link nav-item" id="Cricket" onclick="onNavItemClick('Cricket')">Cricket</li>
+          <li class="hover-link nav-item" id="Politics" onclick="onNavItemClick('Politics')">Politics</li>
+          <li class="hover-link nav-item" id="Stock-Market" onclick="onNavItemClick('Stock-Market')">Stock-Market</li>
+          <li class="hover-link nav-item" id="Science" onclick="onNavItemClick('Science')">Science</li>
+        </ul>
+      </div>
+
+      <div class="search-bar">
+        <input type="text" class="news-input" id="stext" placeholder="e.g. Data structures">
+        <button class="search-button" id="sbutton">Serach</button>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <main>
+    <div class="cards-container container flex " id="cards-container">
+      
+    </div>
+
+  </main>
+
+  <template id="template-news-card">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://via.placeholder.com/400x200" alt="" id="news-img">
+      </div>
+      <div class="card-content">
+        <h3 id="news-title">This is the title</h3>
+        <h6 class="news-source" id="news-source">endGADGET 21/02/24</h6>
+        <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus officiis sequi dolor. Eum perferendis, cupiditate et, reprehenderit dolor porro hic voluptas adipisci voluptatem, consectetur expedita veritatis quisquam! Nobis, vitae veritatis?</p>
+      </div>
+    </div>
+  </template>
+  
+  <script src="newsApp.js"></script>
+</body>
+</html>
